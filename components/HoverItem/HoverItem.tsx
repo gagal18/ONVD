@@ -1,12 +1,12 @@
 import React, {useRef, useState} from "react";
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 import gsap from "gsap";
 
 interface HoverItemProps {
     text: string;
     link: string;
-    img: string;
-    gif: string;
+    img: StaticImageData;
+    gif: StaticImageData;
 }
 const HoverItem: React.FC<HoverItemProps> = ({text, link, img, gif}) => {
     const [isHovered, setIsHovered] = useState(false);
