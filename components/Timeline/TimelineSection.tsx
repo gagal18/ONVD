@@ -51,7 +51,7 @@ const TimelineSection:React.FC = () =>{
                 <h3 className="vertical-timeline-element-title">Frontend Developer (Internship)</h3>
                 <h4 className="vertical-timeline-element-subtitle">JM International (JMI) (Remote)</h4>
                 <p>
-                    Participated in an internship focused on gaining experience and learning React and Next.js while contributing to the team's projects.
+                    Participated in an internship focused on gaining experience and learning React and Next.js while contributing to the team&apos;s projects.
                 </p>
             </VerticalTimelineElement>
 
