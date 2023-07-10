@@ -7,11 +7,19 @@ import {
     SiGatsby,
     SiCplusplus,
     SiC,
-    SiTypescript, SiMongodb, SiGithub, SiGitlab, SiHtml5
+    SiTypescript,
+    SiMongodb,
+    SiGithub,
+    SiGitlab,
+    SiHtml5
 } from 'react-icons/si';
 
+interface IProps {
+    [icon: string]: string;
+    modalContent: string;
+}
 
-export const sliderIconData = [
+export const sliderIconData: IProps[] = [
     { icon: "React", modalContent: "React Modal Content" },
     { icon: "JavaScript", modalContent: "JavaScript Modal Content" },
     { icon: "Redux", modalContent: "Redux Modal Content" },
@@ -27,7 +35,11 @@ export const sliderIconData = [
     { icon: "HTML", modalContent: "HTML Modal Content" },
 ];
 
-const iconComponents = {
+interface IconComponents {
+    [icon: string]: JSX.Element | null;
+}
+
+const iconComponents: IconComponents = {
     React: <SiReact color={"#A6DFFF"} />,
     JavaScript: <SiJavascript color={"#F0DB4F"} />,
     Redux: <SiRedux color={"#764ABC"} />,
@@ -43,7 +55,7 @@ const iconComponents = {
     HTML: <SiHtml5 color={"#E34F26"} />,
 };
 
-export const renderIconComponent = (icon) => {
+export const renderIconComponent = (icon: string): JSX.Element | null => {
     const Component = iconComponents[icon];
     return Component ? Component : null;
 };

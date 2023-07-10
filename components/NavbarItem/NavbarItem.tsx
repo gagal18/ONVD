@@ -45,11 +45,11 @@ const NavbarItem: React.FC<NavbarItemProps> = ({ name, to }) => {
     }, []);
 
     return (
-        <a href={to}>
+        <Link href={to}>
             <div className="bg-white px-4 py-2">
                 <div className={"text-center text-transparent bg-gradient-to-r from-gray-300 to-gray-800 bg-clip-text font-bold transition duration-300"} ref={spanRef} data-name={name} dangerouslySetInnerHTML={{ __html: name }}></div>
             </div>
-        </a>
+        </Link>
     );
 };
 

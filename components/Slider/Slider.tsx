@@ -22,30 +22,31 @@ const Slider:React.FC = () => {
     const swiperElRef = useRef<SwiperRef>(null);
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1024px)' })
     const handleSlideHover = (isActive: boolean) => {
-        const activeIndex = swiperElRef.current.swiper.activeIndex;
-        if (isActive && swiperElRef.current && swiperElRef.current.swiper.autoplay.running) {
-            swiperElRef.current.swiper.autoplay.stop();
-        }
-        const modals = document.querySelectorAll('.knowledge_modal');
-        const activeModal = modals[activeIndex];
-
-        if (isActive) {
-            if(isTabletOrMobile){
-                gsap.to(activeModal, {
-                    y: "-150px",
-                    ease: "power4.out",
-                    duration: 1,
-                    opacity: 1,
-                });
-            }else {
-                gsap.to(activeModal, {
-                    x: "-250px",
-                    ease: "power4.out",
-                    duration: 1,
-                    opacity: 1,
-                });
+        if(swiperElRef !== null && swiperElRef.current) {
+            const activeIndex = swiperElRef.current.swiper.activeIndex;
+            if (isActive && swiperElRef.current && swiperElRef.current.swiper.autoplay.running) {
+                swiperElRef.current.swiper.autoplay.stop();
             }
+            const modals = document.querySelectorAll('.knowledge_modal');
+            const activeModal = modals[activeIndex];
+            if (isActive) {
+                if (isTabletOrMobile) {
+                    gsap.to(activeModal, {
+                        y: "-150px",
+                        ease: "power4.out",
+                        duration: 1,
+                        opacity: 1,
+                    });
+                } else {
+                    gsap.to(activeModal, {
+                        x: "-250px",
+                        ease: "power4.out",
+                        duration: 1,
+                        opacity: 1,
+                    });
+                }
 
+            }
         }
     };
 

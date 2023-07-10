@@ -2,13 +2,14 @@ import React, {useEffect, useState} from 'react';
 import { IconContext } from "react-icons";
 
 import {FaFacebookSquare, FaGithubSquare, FaLinkedin} from "react-icons/fa";
+import Link from "next/link";
 
 
 const SocialIcon = ({icon}: ISocial) =>  {
 
     const [mouseOver, setMouseOver] = useState(false)
     let iconRender
-    let iconLink
+    let iconLink:string = ''
 
         switch (icon) {
             case "Github": {
@@ -27,7 +28,7 @@ const SocialIcon = ({icon}: ISocial) =>  {
 
     return (
         <div className={'w-20 p-2 flex justify-center items-center'}>
-        <a href={iconLink}>
+        <Link href={iconLink}>
         <div className={'text-[25px] flex justify-center flex-col items-center w-full'} onMouseEnter={() => setMouseOver(true)} onMouseLeave={() => setMouseOver(false)}>
             <IconContext.Provider value={{className: "custom-transition duration-300" }}>
                 <div>
@@ -35,7 +36,7 @@ const SocialIcon = ({icon}: ISocial) =>  {
                 </div>
             </IconContext.Provider>
         </div>
-        </a>
+        </Link>
         </div>
     );
 }
