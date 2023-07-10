@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import SocialIcon from "../Social/SocialIcon";
+import Image from "next/image";
 
 function Footer() {
 
@@ -15,7 +16,7 @@ function Footer() {
                     <div className={"flex"}>
                         <span  className={"text-white"}>Crafted by</span>
                         <span className={"flex items-center"}>
-                            <img className={"w-[28px]"} src={"/assets/icon.png"}  alt={"Bojan Gagaleski"}/>
+                            <Image className={"w-[28px]"} src={"/assets/icon.png"}  alt={"Bojan Gagaleski"}/>
                         </span>
                     </div>
                 </div>

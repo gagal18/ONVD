@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BiMenu, BiX } from "react-icons/bi";
 import NavbarItem from "../NavbarItem/NavbarItem";
 import Link from "next/link";
+import Image from "next/image";
 
 function Navbar() {
   const [toggleNavbar, setToggleNavbar] = useState(false);
@@ -11,7 +12,7 @@ function Navbar() {
         <div className={"h-20 flex mx-auto bg-black w-full max-w-[1360px]"}>
           <div className={"hidden w-full lg:flex justify-between"}>
             <Link href={"/"} className={"flex items-center px-[10px]"}>
-                  <img className={"w-12"} src={"/assets/icon.png"}  alt={"Bojan Gagaleski"}/>
+                  <Image className={"w-12"} src={"/assets/icon.png"}  alt={"Bojan Gagaleski"}/>
             </Link>
             <div className={"flex items-center gap-[10px]"}>
                 <NavbarItem to={"/"} name={"home"}/>
@@ -26,7 +27,7 @@ function Navbar() {
               }
           >
             <div className={"flex items-center"}>
-              <img className={"w-12"} src={"/assets/icon.png"}  alt={"Bojan Gagaleski"}/>
+              <Image className={"w-12"} src={"/assets/icon.png"}  alt={"Bojan Gagaleski"}/>
             </div>
             {!toggleNavbar ? (
                 <div
