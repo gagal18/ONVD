@@ -72,18 +72,21 @@ const About: React.FC = () => {
                             At Eagle IT Solutions&apos;s office
                         </p>
                     </div>
-                    <div className={"relative bg-white-off -top-[50px] left-[50px] px-[10px] py-[5px]"}>
+                    <div className={"relative bg-white-off -top-[50px] left-[50px] px-[10px] py-[5px] flex flex-col gap-[20px]"}>
                         <p>
-                            Welcome to my portfolio page!
-                            I am thrilled to have this opportunity to showcase my skills, experiences, and projects. As
-                            a [insert your profession/field here], I am passionate about [insert your area of expertise
-                            here] and constantly strive for excellence in my work. Whether you&apos;re a potential employer,
-                            collaborator, or simply someone interested in learning more about me, I hope this portfolio
-                            provides valuable insights into my abilities and achievements.
-                            Skills:
-                            Throughout my career, I have honed a diverse set of skills that enable me to excel in my
-                            field. These skills include:
+                            It&apos;m a 20-year-old computer science student and front-end developer, deeply passionate about React. Solving problems is at the core of my being, and I find great fulfillment in utilizing my skills to create innovative solutions. During my third year of high school, I had the opportunity to compete in the MASSUM competition, where I proudly secured 3rd place. This experience solidified my love for problem-solving and ignited a drive for continuous growth and learning.
                         </p>
+                        <p>
+                            Throughout my academic journey, I consistently demonstrated excellence, earning the recognition as the best student in my high school. This achievement is a testament to my strong work ethic and unwavering commitment to acquiring knowledge and achieving academic success. When I'm not immersed in coding, I find balance and rejuvenation through regular workouts, understanding the importance of maintaining a healthy lifestyle for both physical and mental well-being.
+                        </p>
+                        <p>
+                            With a solid foundation in front-end development and a genuine love for React, I am excited to explore the vast realms of computer science, particularly in the intersection of machine learning and artificial intelligence. I believe that by harnessing the power of these cutting-edge technologies, we can revolutionize industries, drive innovation, and shape a brighter future.
+                        </p>
+                        <p>
+                            In summary, I am a motivated computer science student and front-end developer driven by a love for problem-solving. My experience in competitions, academic achievements, and commitment to personal fitness all contribute to my well-rounded approach to life and work. I am eager to continue honing my skills, embracing new challenges, and making a meaningful impact in the dynamic world of technology.
+                        </p>
+                        <p>
+                            In addition to my passion for front-end development, I have a strong inclination towards the field of cybersecurity. I am deeply fascinated by the ever-evolving landscape of digital threats and the critical importance of protecting sensitive information. With the rise of machine learning and artificial intelligence, I am eager to explore their applications in enhancing cybersecurity measures. By combining my knowledge of computer science with these emerging technologies, I aspire to become a skilled cyber security engineer, contributing to the development of robust systems and safeguarding against potential vulnerabilities.                        </p>
                             <div className={"my-[20px] flex flex-col gap-[10px]"}>
                         <HoverItem text={"gagaleskibojan@gmail.com"} gif={gif_mail} img={img_mail}
                                    link={"mailto:gagaleskibojan@gmail.com"}/>

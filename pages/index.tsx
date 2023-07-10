@@ -9,7 +9,7 @@ const Home: React.FC = () => {
         <div className={"w-full mx-auto relative "}>
             <Slider />
             <div className="max-w-[1360px] mx-auto relative flex h-min pt-[100px] pb-[150px]">
-                    <div className="left-0 absolute flex flex-col gap-[40px]">
+                    <div className="left-0 absolute flex flex-row lg:flex-col gap-[40px] overflow-x-auto w-[100vw] lg:w-full">
                         <HeroItem header={"welcome!"} >
                             <div className={"text-white-off flex"}>
                                 <span>01</span>
@@ -23,14 +23,13 @@ const Home: React.FC = () => {
                         </HeroItem>
                         <HeroItem header={"as Developer"} >
                             <div className={"text-white-off flex flex-col gap-[10px]"}>
-                                <div>In love with React.JS, making sure I write better code everyday</div>
-                                <div>In love with React.JS, making sure I write better code everyday</div>
+                                <div>I am head over heels for React and JavaScript; their dynamic nature captivates me. However, I yearn to enhance my skills in TypeScript and delve deeper into its statically-typed wonders.</div>
                                 <span>03</span>
                             </div>
                         </HeroItem>
                         <HeroItem header={"as Student"} >
                             <div className={"text-white-off flex flex-col gap-[10px]"}>
-                                <div></div>
+                                <div>As a passionate computer science student, I am eager to embark on a thrilling journey into the realms of cybersecurity, machine learning, and artificial intelligence. The fusion of these fields holds immense potential for creating secure systems powered by intelligent algorithms. I am determined to explore their intricate interplay and make a lasting impact in this exciting domain.</div>
                                 <span>04</span>
                             </div>
                         </HeroItem>

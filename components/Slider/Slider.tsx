@@ -102,7 +102,7 @@ const Slider:React.FC = () => {
                         duration:1
                     });
                     gsap.to(activeSlideElement, {
-                        y: "-150px",
+                        y: "-100px",
                         ease: "power4.out",
                         duration:1,
                         scale: 1.2,
@@ -128,7 +128,7 @@ const Slider:React.FC = () => {
             {sliderIconData.map((slideContent, index) => (
                 <SwiperSlide key={index} className={styles.swiperItem}>
                     {({ isActive }) => (
-                        <div className={"my-auto w-min ml-auto relative"} onMouseEnter={() => handleSlideHover(isActive)} onMouseLeave={handleSlideLeave}  >
+                        <div className={"my-auto w-min lg:ml-auto relative"} onMouseEnter={() => handleSlideHover(isActive)} onMouseLeave={handleSlideLeave}  >
                         <SliderItem content={slideContent.modalContent}>
                         <div className={'text-xl lg:text-4xl flex justify-center flex-col items-center w-full'}>
                             {renderIconComponent(slideContent.icon)}
