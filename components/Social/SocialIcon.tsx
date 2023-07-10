@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import { IconContext } from "react-icons";
 
-import {FaFacebookSquare, FaGithubSquare, FaLinkedin} from "react-icons/fa";
+import {FaFacebookSquare, FaGithubSquare} from "react-icons/fa";
 import Link from "next/link";
+import {SiCodewars, SiLinkedin} from "react-icons/si";
+
 
 
 const SocialIcon = ({icon}: ISocial) =>  {
@@ -21,8 +23,12 @@ const SocialIcon = ({icon}: ISocial) =>  {
                 iconLink = 'https://www.facebook.com/bojan.gagaleski'
             }break;
             case "LinkedIn": {
-                iconRender = <FaLinkedin color={mouseOver ? "#3987C8" :  "#a5a5a5"}/>
+                iconRender = <SiLinkedin color={mouseOver ? "#3987C8" :  "#a5a5a5"}/>
                 iconLink = 'https://www.linkedin.com/in/bojan-gagaleski-318922197'
+            }break;
+            case "CodeWars": {
+                iconRender = <SiCodewars color={mouseOver ? "#A32E23" :  "#a5a5a5"}/>
+                iconLink = 'https://www.codewars.com/users/gagal18'
             }break;
         }
 

@@ -12,6 +12,7 @@ function Footer() {
                     <SocialIcon icon={"Github"}/>
                     <SocialIcon icon={"Facebook"}/>
                     <SocialIcon icon={"LinkedIn"}/>
+                    <SocialIcon icon={"CodeWars"}/>
                 </div>
                 <div className={"flex justify-center"}>
                     <div className={"flex items-center"}>

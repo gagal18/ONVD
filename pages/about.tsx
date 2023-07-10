@@ -4,6 +4,11 @@ import Image from "next/image";
 import bojan from "../public/assets/bojan.jpg";
 import {gsap} from "gsap";
 import {useMediaQuery} from "react-responsive";
+import HoverItem from "../components/HoverItem/HoverItem";
+import gif_mail from "../public/assets/email.gif";
+import img_mail from "../public/assets/email.png";
+import gif_phone from "../public/assets/telephone.gif";
+import img_phone from "../public/assets/telephone.png";
 
 const About: React.FC = () => {
     const slideRef = useRef<HTMLDivElement>(null);
@@ -79,6 +84,12 @@ const About: React.FC = () => {
                             Throughout my career, I have honed a diverse set of skills that enable me to excel in my
                             field. These skills include:
                         </p>
+                            <div className={"my-[20px] flex flex-col gap-[10px]"}>
+                        <HoverItem text={"gagaleskibojan@gmail.com"} gif={gif_mail} img={img_mail}
+                                   link={"mailto:gagaleskibojan@gmail.com"}/>
+                        <HoverItem text={"072 525 452"} gif={gif_phone} img={img_phone}
+                                   link={"tel:072525452"}/>
+                            </div>
                     </div>
                 </div>
             </div>
