@@ -13,7 +13,7 @@ const SocialIcon = ({icon}: ISocial) =>  {
 
         switch (icon) {
             case "Github": {
-                iconRender = <FaGithubSquare color={mouseOver ? "white" : "#a5a5a5"}/>
+                iconRender = <FaGithubSquare color={mouseOver ? "#fff" : "#a5a5a5"}/>
                 iconLink = 'https://github.com/gagal18'
             }break;
             case "Facebook": {
