@@ -11,7 +11,7 @@ const HeadLinks = () => {
 
     return (
         <Head>
-            <link rel="shortcut icon" href="/favicon.ico" />
+            <link rel="shortcut icon" href={`${process.env.NODE_ENV === 'production' ? "portfolio" : ""}/assets/favicon.ico`} />
             <meta name="theme-color" content="#ffffff" />
             <title>Bojan&apos;s Portfolio</title>
             <meta property="og:title" content={"Bojan's Portfolio"} />
