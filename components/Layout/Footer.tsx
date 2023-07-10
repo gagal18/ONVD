@@ -14,7 +14,7 @@ function Footer() {
                     <SocialIcon icon={"LinkedIn"}/>
                 </div>
                 <div className={"flex justify-center"}>
-                    <div className={"flex"}>
+                    <div className={"flex items-center"}>
                         <span  className={"text-white"}>Crafted by</span>
                         <span className={"flex items-center"}>
                             <Image className={"w-12"} src={avatar}  alt={"Bojan Gagaleski"}/>

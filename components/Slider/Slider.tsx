@@ -49,8 +49,6 @@ const Slider:React.FC = () => {
             }
         }
     };
-
-
     const handleSlideLeave = () => {
         if (swiperElRef.current && !swiperElRef.current?.swiper.autoplay.running) {
             swiperElRef.current?.swiper.autoplay.start();

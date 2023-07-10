@@ -1,5 +1,4 @@
 const nextConfig = {
-  output: 'export',
   trailingSlash: true,
   publicRuntimeConfig: {
     basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',

@@ -22,7 +22,7 @@ const NavbarItem: React.FC<NavbarItemProps> = ({ name, to }) => {
                 const childNodesArray = Array.from(spanRef.current?.childNodes || []);
                 spanRef.current.innerHTML = childNodesArray.map((letter, index) => {
                     if (index < iteration && text.chars) {
-                        return `<span class="font-bold text-transparent bg-gradient-to-r from-gray-300 to-blue-500 bg-clip-text">${text.chars[index].innerText}</span>`;
+                        return `<span class="font-bold text-transparent bg-gradient-to-r from-gray-300 to-grey-off bg-clip-text">${text.chars[index].innerText}</span>`;
                     }
                     return `<span style="color: red" className="text-red-900">${letters[Math.floor(Math.random() * 26)]}</span>`;
                 }).join("");

@@ -15,8 +15,8 @@ const Heading:React.FC<HeadingProps> = ({text, specChar}) => {
         gsap.to(headingRef.current, { scale: 1,  duration: 0.3 });
     }
     return(
-        <div className="bg-white-off cursor-pointer" ref={headingRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <h1 className={"px-[12px] text-black-off text-2xl"}>{text}<span className={"text-grey-off text-3xl font-bold"}>{specChar}</span></h1>
+        <div className="w-max inline bg-white-off cursor-pointer" ref={headingRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <h1 className={" px-[12px] text-black-off text-2xl"}>{text}<span className={"text-grey-off text-3xl font-bold"}>{specChar}</span></h1>
         </div>
     )
 }

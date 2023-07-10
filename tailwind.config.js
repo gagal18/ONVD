@@ -13,6 +13,9 @@ module.exports = {
         'black-off': '#101314',
         'white-off': '#fffffa',
       },
+      boxShadow: {
+        'left': '5px 5px 5px 0px rgba(0,0,0,0.3)',
+      }
     },
   },
   plugins: [],
