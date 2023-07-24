@@ -9,7 +9,7 @@ const Home: React.FC = () => {
         <div className={"w-full mx-auto relative "}>
             <Slider />
             <div className="max-w-[1360px] mx-auto relative flex h-min pt-[100px] pb-[150px]">
-                    <div className="left-0 absolute flex flex-row lg:flex-col gap-[40px] overflow-x-auto w-[100vw] lg:w-full">
+                    <div className="left-0 absolute flex flex-row lg:flex-col gap-[40px] w-[100vw] overflow-x-auto lg:overflow-x-unset lg:w-full px-[40px] lg:px-unset">
                         <HeroItem header={"welcome!"} >
                             <div className={"text-white-off flex"}>
                                 <span>01</span>
